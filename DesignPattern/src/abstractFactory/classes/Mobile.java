@@ -13,7 +13,7 @@ public class Mobile {
     }
 
     public Mobile(IMobileComponentFactory mobileComponentFactory) {
-        super();
+        //super();
         System.out.println();
         display = mobileComponentFactory.createDisplay();
         camera = mobileComponentFactory.createCamera();
