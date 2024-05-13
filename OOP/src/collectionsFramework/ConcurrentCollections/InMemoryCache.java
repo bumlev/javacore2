@@ -7,7 +7,7 @@ public class InMemoryCache<K , V> {
     private final ConcurrentHashMap<K, V> cache;
 
     public InMemoryCache() {
-        this.cache = new ConcurrentHashMap<K, V>();
+        this.cache = new ConcurrentHashMap<>();
     }
 
     public void put(K key, V value) {

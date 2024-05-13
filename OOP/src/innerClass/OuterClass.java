@@ -2,7 +2,7 @@ package innerClass;
 
 public class OuterClass {
 
-    private int outerData;
+    private final int outerData;
 
     public OuterClass(int data) {
         this.outerData = data;

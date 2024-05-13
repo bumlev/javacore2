@@ -28,13 +28,15 @@ public class FileReadExample {
 
             // Handle the case where the file is not found
             System.out.println("The specified file does not exist.");
-            e.printStackTrace();
+            System.exit(0);
+            // e.printStackTrace();
 
         } catch (IOException e) {
 
             // Handle other I/O errors
             System.out.println("An I/O error occurred while reading the file.");
-            e.printStackTrace();
+            System.exit(0);
+           // e.printStackTrace();
 
         }
     }
