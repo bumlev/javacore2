@@ -9,10 +9,10 @@ public class SingleThread {
 
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.submit(() -> {
-            System.out.println("Task 1");
+            System.out.println(Thread.currentThread().getName()+ " Task 1");
         });
         executor.submit(() -> {
-            System.out.println("Task 2");
+            System.out.println(Thread.currentThread().getName()+ " Task 2");
         });
         executor.shutdown();
     }

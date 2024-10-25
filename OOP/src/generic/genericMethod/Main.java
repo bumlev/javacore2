@@ -9,10 +9,10 @@ public class Main {
 
         // Validating number
         boolean isNumberValid = DataValidator.validateData(number , new PositiveNumberValidation());
-        System.out.println("Is number valid? " + isNumberValid);
+        System.out.println("Is number valid ? " + isNumberValid);
 
         // Validating string
         boolean isStringValid = DataValidator.validateData(text , new NonEmptyStringValidation());
-        System.out.println("Is string valid? " + isStringValid);
+        System.out.println("Is string valid ? " + isStringValid);
     }
 }
